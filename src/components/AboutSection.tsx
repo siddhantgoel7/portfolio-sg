@@ -3,10 +3,10 @@ import { User, MapPin, Calendar, Coffee } from "lucide-react";
 
 const AboutSection = () => {
   const stats = [
-    { icon: Calendar, label: "Years Experience", value: "2+" },
-    { icon: Coffee, label: "Cups of Coffee", value: "∞" },
+    { icon: Calendar, label: "Graduation", value: "May 2027" },
+    { icon: User, label: "Degree", value: "B.Sc. (Honours)" },
     { icon: MapPin, label: "Location", value: "Edmonton, AB" },
-    { icon: User, label: "Status", value: "Chill & Code" }
+    { icon: Coffee, label: "Specialization", value: "AI & Systems" }
   ];
 
   return (
@@ -37,17 +37,18 @@ const AboutSection = () => {
                 <div><span className="text-minecraft-emerald">class</span> <span className="text-minecraft-diamond">SoftwareEngineer</span> {`{`}</div>
                 <div className="ml-4"><span className="text-minecraft-gold">constructor</span>() {`{`}</div>
                 <div className="ml-8">this.name = <span className="text-minecraft-redstone">"Siddhant Goel"</span>;</div>
-                <div className="ml-8">this.passion = <span className="text-minecraft-redstone">"Creating Amazing Software"</span>;</div>
-                <div className="ml-8">this.coffee = <span className="text-minecraft-diamond">true</span>;</div>
+                <div className="ml-8">this.school = <span className="text-minecraft-redstone">"University of Alberta"</span>;</div>
+                <div className="ml-8">this.focus = [<span className="text-minecraft-redstone">"AI"</span>, <span className="text-minecraft-redstone">"RAG Pipelines"</span>, <span className="text-minecraft-redstone">"Backend Systems"</span>];</div>
+                <div className="ml-8">this.status = <span className="text-minecraft-diamond">"Building Production Software"</span>;</div>
                 <div className="ml-4">{`}`}</div>
                 <div>{`}`}</div>
               </div>
             </div>
             
             <p className="text-base sm:text-lg leading-relaxed">
-              Welcome to my digital realm! I'm a passionate software engineer who believes 
-              in building applications that are both functional and beautiful. 
-              I like to turn real-world problems into efficient digital solutions.
+              I'm a B.Sc. (Honours) Computing Science student at the University of Alberta with internship experience 
+              building AI-integrated tools, multi-tenant backend architectures, and full-stack cloud applications. 
+              Passionate about shipping high-impact software from RAG microservices to real-time multiplayer platforms.
             </p>
           </div>
           

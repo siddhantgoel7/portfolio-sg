@@ -3,40 +3,40 @@ import { Code, Database, Globe, Smartphone, Server, Zap } from "lucide-react";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      icon: Globe,
+      title: "Languages",
+      icon: Code,
       color: "from-minecraft-diamond to-blue-400",
-      skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Figma"]
+      skills: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "C/C++", "C#"]
     },
     {
-      title: "Backend",
-      icon: Server,
+      title: "Frameworks & Libraries",
+      icon: Globe,
       color: "from-minecraft-emerald to-green-400",
-      skills: ["Node.js", "Express", "Python", "Flask", "Django", "SQL"]
+      skills: ["React", "React Native", "Next.js", "Node.js", "Django REST", "FastAPI", "Express", ".NET Core"]
+    },
+    {
+      title: "Cloud & DevOps",
+      icon: Server,
+      color: "from-minecraft-redstone to-pink-400",
+      skills: ["AWS", "Docker", "Kubernetes", "GitHub Actions", "GitLab CI", "CI/CD"]
     },
     {
       title: "Databases",
       icon: Database,
       color: "from-minecraft-gold to-yellow-400",
-      skills: ["PostgreSQL", "MongoDB", "SQLite", "Firebase"]
+      skills: ["PostgreSQL", "Supabase", "MySQL", "MongoDB", "Firebase Firestore", "Redis"]
     },
     {
-      title: "Mobile",
+      title: "Testing & Tools",
       icon: Smartphone,
-      color: "from-minecraft-redstone to-pink-400",
-      skills: ["Android SDK", "Firebase", "React Native"]
+      color: "from-minecraft-grass to-lime-500",
+      skills: ["Jest", "Playwright", "Vitest", "Selenium", "Git", "Linux/Bash", "SonarQube", "CodeRabbit"]
     },
     {
-      title: "AI & ML",
+      title: "AI & Data",
       icon: Zap,
       color: "from-minecraft-lapis to-indigo-500",
-      skills: ["TensorFlow", "NLP", "ML", "Python"]
-    },
-    {
-      title: "Tools & Platforms",
-      icon: Code,
-      color: "from-minecraft-grass to-lime-500",
-      skills: ["Git", "GitHub", "Postman", "Zoho Creator", "ROS"]
+      skills: ["OpenAI API", "LangChain", "RAG", "pgvector", "Whisper STT", "Hugging Face", "Scikit-learn", "Pandas", "NumPy"]
     },
   ];
 

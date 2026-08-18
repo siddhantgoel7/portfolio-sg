@@ -3,8 +3,52 @@ import { ExternalLink, Github, Star } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "CampusNest",
+      description: "Cross-platform housing marketplace for university students on iOS, Android, and Web featuring university-only auth, real-time listing sync, and map discovery.",
+      bullets: [
+        "University-only authentication, listing, filtering, and Google Maps-based discovery.",
+        "Real-time saved listing sync across active views using change subscriptions.",
+        "Scalable PostgreSQL backend with real-time messaging, admin moderation, and storage cleanup.",
+        "Integrated CodeRabbit to cut PR review cycle times by 30%."
+      ],
+      tech: ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL", "Google Maps SDK"],
+      github: "https://github.com/siddhantgoel7",
+      stars: 120,
+      image: "🏠"
+    },
+    {
+      title: "PromptEd",
+      description: "Real-time AI interactive learning platform serving 200+ concurrent users with instructor dashboard, live session engine, and RAG pipelines.",
+      bullets: [
+        "Shipped instructor dashboard, live session engine, and student client for 200+ concurrent users.",
+        "Provider-agnostic RAG system embedding content (pgvector), Whisper STT, and GPT-4o-mini outputs.",
+        "80+ unit, API, and E2E tests in GitLab CI/CD pipeline achieving regression-free deployments."
+      ],
+      tech: ["Next.js", "TypeScript", "OpenAI GPT-4o", "PostgreSQL", "pgvector", "Whisper STT", "Playwright"],
+      github: "https://github.com/siddhantgoel7",
+      stars: 110,
+      image: "⚡"
+    },
+    {
+      title: "Elevated",
+      description: "Gamified learning web platform featuring automated game generation (Crosswords, Trivia, Jeopardy) and real-time multiplayer.",
+      bullets: [
+        "Automated gamification engine for interactive academic games.",
+        "Real-time multiplayer over WebSockets (Django Channels & Redis) with live leaderboards.",
+        "LLM-powered RAG microservice converting uploaded lecture PDFs into grounded game questions."
+      ],
+      tech: ["React", "TypeScript", "Django REST", "WebSockets", "Redis", "LangChain", "RAG"],
+      github: "https://github.com/siddhantgoel7",
+      stars: 98,
+      image: "🎮"
+    },
+    {
       title: "Mood Tracker App",
       description: "Android app for mood logging with real-time sync, emotion-mapped UI, geotagged pins, social features, and Firebase integration.",
+      bullets: [
+        "Android app for mood logging with real-time sync and emotion-mapped UI.",
+        "Geotagged pins, social features, and Firebase backend integration."
+      ],
       tech: ["Android SDK", "Firebase", "Java", "JUnit", "Espresso"],
       github: "https://github.com/siddhantgoel7/project-kernelcrew",
       stars: 82,
@@ -13,6 +57,10 @@ const ProjectsSection = () => {
     {
       title: "ConsoleTweeter CLI",
       description: "A Python-based social media CLI with tweeting, hashtag parsing, user auth, follow system, and MongoDB + SQLite integration.",
+      bullets: [
+        "CLI social media client supporting tweets, hashtag indexing, and user relationships.",
+        "Dual persistence layer using MongoDB and SQLite."
+      ],
       tech: ["Python", "MongoDB", "SQLite", "CLI"],
       github: "https://github.com/siddhantgoel7/ConsoleTweeter-CLI-v2", 
       stars: 66,
@@ -21,6 +69,10 @@ const ProjectsSection = () => {
     {
       title: "RareQuest Web Game",
       description: "Pixel-style RPG browser game built in a healthcare hackathon to raise awareness about rare diseases through gameplay.",
+      bullets: [
+        "Pixel RPG browser game highlighting health challenges.",
+        "Interactive gameplay built with Phaser.js and HTML5 Canvas."
+      ],
       tech: ["Phaser.js", "JavaScript", "HTML", "CSS"],
       github: "https://github.com/siddhantgoel7/RareQuest",
       stars: 94,

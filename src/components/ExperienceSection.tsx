@@ -3,33 +3,43 @@ import { Calendar, MapPin, Trophy } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Software Engineer Intern",
-      company: "Wisethink Solutions",
-      location: "New Delhi, India",
-      period: "May 2025 – Present",
-      description: `Built custom business applications using Zoho Creator, Deluge, and Python with Java/JavaScript integrations. 
-      Developed backend workflows for fintech, e-governance, and healthcare clients like BharatPe and NSDC, collaborating across teams to ship production-ready features.`,
-      skills: ["Zoho Creator", "Deluge", "Python", "JavaScript"],
+      title: "Software Engineer Intern (AI)",
+      company: "Buxton Labs",
+      location: "Edmonton, AB",
+      period: "May 2026 – Aug 2026",
+      bullets: [
+        "Led development on an Agile team shipping AI-integrated tools for 3+ Canadian post-secondary institutions.",
+        "Designed scalable backend systems and constructed comprehensive test suites and CI/CD deployment workflows to support multi-tenant institutional clients.",
+        "Researched and incorporated RAG pipelines and LangChain-based tooling to deliver context-aware AI features across client-facing applications."
+      ],
+      skills: ["RAG Pipelines", "LangChain", "Python", "FastAPI", "CI/CD", "Agile"],
       color: "from-minecraft-diamond to-blue-400"
     },
     {
-      title: "Full Stack ML Web Developer Intern",
-      company: "Undergraduate Artificial Intelligence Society",
+      title: "Software Developer Intern",
+      company: "University of Alberta",
       location: "Edmonton, AB",
-      period: "Jan 2024 – April 2024",
-      description: `Integrated ML and NLP models with a full-stack web platform to automate industrial risk report analysis. 
-      Used ChatGPT APIs to enhance report generation and risk prediction, optimizing safety control workflows.`,
-      skills: ["Python", "React", "Flask", "NLP", "ChatGPT API"],
+      period: "Jan 2026 – Apr 2026",
+      bullets: [
+        "Rolled out multiple production platforms for faculties and students with a 7-person Agile team.",
+        "Delivered 50+ features across bi-weekly sprints and served as primary liaison between technical team and faculty.",
+        "Deployed CI/CD pipelines via GitHub Actions and Cybera covering 1,200+ test cases, achieving 85% test coverage.",
+        "Hardened production security using Google OAuth, server-side session cookies, and route-level ownership validation."
+      ],
+      skills: ["GitHub Actions", "Cybera", "Google OAuth", "React", "Node.js", "CI/CD"],
       color: "from-minecraft-emerald to-green-400"
     },
     {
-      title: "Software Engineer - Sensor Integration",
-      company: "SPEAR, University of Alberta",
-      location: "Edmonton, AB",
-      period: "Sept 2023 – Apr 2025",
-      description: `Contributed to the University Rover Challenge by engineering camera and radio subsystems. 
-      Developed ROS-based autonomous navigation algorithms for obstacle avoidance and real-time decision-making.`,
-      skills: ["ROS", "C++", "Python", "Robotics"],
+      title: "Software Developer Intern",
+      company: "Wisethink Information Solutions",
+      location: "Remote",
+      period: "May 2025 – Aug 2025",
+      bullets: [
+        "Developed 5+ custom business applications in health, fintech, and e-governance, reducing manual client workflows.",
+        "Connected REST APIs across cross-functional teams to link Zoho Creator apps with external services and client systems while processing 10K+ daily transactions for enterprise clients.",
+        "Configured multi-stage CI/CD pipelines with continuous testing and container deployments, enabling 3 platforms to ship 20% ahead of schedule."
+      ],
+      skills: ["REST APIs", "Zoho Creator", "Python", "Docker", "CI/CD", "Fintech"],
       color: "from-minecraft-gold to-yellow-400"
     }
   ];
@@ -93,7 +103,14 @@ const ExperienceSection = () => {
                     </div>
                   </div>
 
-                  <p className="text-sm sm:text-base mb-4 leading-relaxed whitespace-pre-line">{exp.description}</p>
+                  <ul className="space-y-2 mb-4">
+                    {exp.bullets.map((bullet, bulletIndex) => (
+                      <li key={bulletIndex} className="flex items-start gap-2 text-xs sm:text-sm text-foreground/90 leading-relaxed">
+                        <span className="text-minecraft-emerald mt-1 text-xs">◆</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
 
                   <div className="flex flex-wrap gap-2">
                     {exp.skills.map((skill, skillIndex) => (

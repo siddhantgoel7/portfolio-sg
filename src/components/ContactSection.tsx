@@ -3,8 +3,8 @@ import { Mail, Github, Linkedin, Twitter, MessageSquare } from "lucide-react";
 const ContactSection = () => {
   const socialLinks = [
     { icon: Github, label: "GitHub", url: "https://github.com/siddhantgoel7", color: "hover:text-gray-300" },
-    { icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/siddhant-goel-/", color: "hover:text-blue-400" },
-    { icon: Mail, label: "Email", url: "mailto:siddhantgoel5@gmail.com", color: "hover:text-red-400" }
+    { icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/-siddhantgoel", color: "hover:text-blue-400" },
+    { icon: Mail, label: "Email", url: "mailto:sgoel3@ualberta.ca", color: "hover:text-red-400" }
   ];
 
   return (
@@ -45,9 +45,11 @@ const ContactSection = () => {
               </p>
               <div className="font-mono text-xs sm:text-sm bg-black/30 p-3 sm:p-4 rounded space-y-1">
                 <div className="text-green-300">$ whoami</div>
-                <div className="animate-pulse">siddhant.goel@developer.local</div>
+                <div className="animate-pulse">sgoel3@ualberta.ca</div>
+                <div className="text-green-300">$ location</div>
+                <div>Edmonton, AB</div>
                 <div className="text-green-300">$ status</div>
-                <div className="animate-pulse">Available for new opportunities</div>
+                <div className="animate-pulse">Available for software engineering roles</div>
               </div>
             </div>
             
@@ -116,7 +118,7 @@ const ContactSection = () => {
             Built with ❤️ using React, TypeScript, and Tailwind CSS
           </p>
           <p className="font-mono text-xs mt-2 opacity-60">
-            © 2024 Siddhant Goel. All blocks crafted with care.
+            © 2026 Siddhant Goel. All blocks crafted with care.
           </p>
         </div>
       </div>
