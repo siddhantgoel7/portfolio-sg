@@ -8,8 +8,8 @@
   {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "cp dist/index.html dist/404.html",
-    "predeploy": "npm run build",
+    "postbuild": "cp dist/index.html dist/404.html 2>/dev/null || true",
+    "predeploy": "VITE_BASE_PATH=/portfolio-sg/ npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
