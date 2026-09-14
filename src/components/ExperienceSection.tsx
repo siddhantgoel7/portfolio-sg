@@ -3,7 +3,7 @@ import { Calendar, MapPin, Trophy } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Software Engineer Intern (AI)",
+      title: "Software Engineer Intern",
       company: "Buxton Labs",
       location: "Edmonton, AB",
       period: "May 2026 – Aug 2026",

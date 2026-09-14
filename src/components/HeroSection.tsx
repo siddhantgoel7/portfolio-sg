@@ -33,7 +33,7 @@ const HeroSection = () => {
             </h1>
             
             <div className="text-lg sm:text-xl lg:text-2xl font-mono">
-              <span className="typewriter">Software Engineer (AI) | CS Honours @ UAlberta</span>
+              <span className="typewriter">Software Engineer | CS Honours @ UAlberta</span>
             </div>
             
             <p className="text-base sm:text-lg opacity-90 max-w-md leading-relaxed">
